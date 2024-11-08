@@ -66,6 +66,14 @@ Make use of the many generators for code, try `ember help generate` for more det
 
 Specify what it takes to deploy your app.
 
+## Presentation Resources:
+* <a href="https://tailwindcss.com/docs/guides/emberjs">Tailwind CSS EmberJS Guide</a>
+* <a href="https://tailwindcss.com/docs/installation/framework-guides">Tailiwnd CSS Framework Specific Guides</a>
+* <a href="https://marketplace.visualstudio.com/items?itemName=bradlc.vscode-tailwindcss"> Tailwind CSS Intellisense Plugin for VSCode</a>
+* <a href="https://github.com/tailwindlabs/prettier-plugin-tailwindcss">Prettier Plugin for Tailwind CSS</a>
+
+
+
 ## Further Reading / Useful Links
 
 - [ember.js](https://emberjs.com/)
