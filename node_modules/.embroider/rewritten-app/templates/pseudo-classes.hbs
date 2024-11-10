@@ -1,0 +1,38 @@
+<Step
+@title = "Pseudo-classes"
+@description = "Pseudo-classes are from css where you would normally need to define a seperate state for an element. These are actions like :hover, :focus, :active, and :visited. In Tailwind, these are defined as classes that you can add to an element to change its appearance."
+@extra = "Let's see how we can use these in Tailwind."
+/>
+
+<div class="pl-4 mb-16 flex flex-col space-y-4 items-start">
+    <Card
+    @title="hover:bg-{color}"
+    @description="This changes the background color of the element when the mouse hovers over it."
+    @code1=
+"<div class='bg-sky-100 hover:bg-sky-500'>
+    Change on hover!
+</div>"
+    />
+
+    <Card
+    @title="focus:outline"
+    @description="This removes the outline from an element when it is focused."
+    @code1=
+"<button class='focus:outline focus:outline-sky-700 bg-sky-100 text-black p-2 rounded-lg no-flip'>
+    Click me!
+</button>"
+    />
+
+    <Card
+    @title="active:bg-{color}"
+    @description="This changes the background color of the element when it is clicked."
+    @code1=
+"<button class='active:bg-sky-700 bg-sky-100 p-2 rounded-lg no-flip'>
+    Click me!
+</button>"
+    @code2=
+"<button class='active:bg-sky-700 active:text-white bg-sky-100 p-2 rounded-lg no-flip'>
+    Click me!
+</button>"
+    />
+</div>

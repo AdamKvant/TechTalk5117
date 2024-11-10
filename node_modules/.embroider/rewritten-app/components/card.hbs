@@ -1,6 +1,6 @@
-<div class="p-6 max-w-xl bg-white rounded-xl flex items-center gap-x-4 shadow-2xl" {{on "click" this.flip}}>
+<div class="p-6 bg-white rounded-xl flex items-center gap-x-4 shadow-2xl" {{on "click" this.flip}}>
     <div>
-        <div class="text-xl font-medium text-black">{{@title}}</div>
+        <div class="text-xl font-medium text-black {{if this.isFlipped "text-sky-700"}}">{{@title}}</div>
         <p class="text-slate-500">{{@description}}</p>
         <!--this and helper is required to have "ember install ember-truth-helpers" !-->
         {{#if (and this.isFlipped @code1)}}
