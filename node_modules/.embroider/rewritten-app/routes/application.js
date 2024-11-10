@@ -22,6 +22,15 @@ export default class ApplicationRoute extends Route {
             case 3:
                 this.router.transitionTo('groups');
                 break;
+            case 4:
+                this.router.transitionTo('peers');
+                break;
+            case 5:
+                this.router.transitionTo('decendants');
+                break;
+            case 6:
+                this.router.transitionTo('has');
+                break;
         }
     }
 }

@@ -10,4 +10,7 @@ Router.map(function () {
   this.route('intro', { path: '/' }); 
   this.route('pseudo-classes');
   this.route('groups');
+  this.route('peers');
+  this.route('decendants');
+  this.route('has');
 });
