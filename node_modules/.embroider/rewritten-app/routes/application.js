@@ -47,6 +47,9 @@ export default class ApplicationRoute extends Route {
                 this.router.transitionTo('custom-styles');
                 break;
             case 12:
+                this.router.transitionTo('directives');
+                break;
+            case 13:
                 this.router.transitionTo('functions');
                 break;
         }

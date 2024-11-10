@@ -1,0 +1,37 @@
+<Step
+    @title = "Functions"
+    @description = "Tailwind adds a few custom functions you can use in your CSS to access Tailwind-specific values. These functions are evaluated at build-time, and are replaced by static values in your final CSS."
+/>
+<div class="pl-4 mb-16 flex flex-col space-y-4 items-start">
+    <Card
+        @title = "theme()"
+        @description = "Use the theme() function to access your Tailwind config values using dot notation."
+        @noRender = "true"
+        @code1 =
+".content-area {
+  height: calc(100vh - theme(spacing.12));
+}"
+
+        @code2 =
+".content-area {
+  height: calc(100vh - theme(spacing[2.5]));
+}
+"
+    />
+
+    <Card
+        @title = "screen()"
+        @description = "The screen function allows you to create media queries that reference your breakpoints by name instead of duplicating their values in your own CSS."
+        @noRender = "true"
+        @code1 =
+"@media screen(sm) {
+  /* ... */
+}"
+
+        @code2 =
+"@media (min-width: 640px) {
+  /* ... */
+}
+"
+    />
+</div>

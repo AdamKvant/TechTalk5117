@@ -14,4 +14,5 @@ export default class Card extends Component {
 
         this.isFlipped = !this.isFlipped;
     }
+    
 }

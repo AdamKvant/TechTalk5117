@@ -7,18 +7,24 @@
             <div class="p-6">
                 <pre class="bg-sky-50"><code>{{@code1}}</code></pre>
                 <br>
+                {{#if (not @noRender)}}
                 {{{@code1}}}
+                {{/if}}
                 {{#if @code2}}
                     <br>
                     <pre class="bg-sky-50"><code>{{@code2}}</code></pre>
                     <br>
-                {{{@code2}}}
+                    {{#if (not @noRender)}}
+                        {{{@code2}}}
+                    {{/if}}
                 {{/if}}
                 {{#if @code3}}
                     <br>
                     <pre class="bg-sky-50"><code>{{@code3}}</code></pre>
                     <br>
-                {{{@code3}}}
+                    {{#if (not @noRender)}}
+                    {{{@code3}}}
+                    {{/if}}
                 {{/if}}
             </div>
         {{/if}}
