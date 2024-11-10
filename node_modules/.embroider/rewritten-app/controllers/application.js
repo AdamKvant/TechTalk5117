@@ -6,7 +6,7 @@ import { inject as service } from '@ember/service';
 export default class ApplicationController extends Controller {
     @tracked step = 1;
     @service router;
-    numberOfSteps = 6;
+    numberOfSteps = 12;
 
     transitionStep() {
         console.log('transitioning to step', this.step);
@@ -28,6 +28,24 @@ export default class ApplicationController extends Controller {
                 break;
             case 6:
                 this.router.transitionTo('has');
+                break;
+            case 7:
+                this.router.transitionTo('before-after');
+                break;
+            case 8:
+                this.router.transitionTo('media');
+                break;
+            case 9:
+                this.router.transitionTo('darkmode');
+                break;
+            case 10:
+                this.router.transitionTo('reusing');
+                break;
+            case 11:
+                this.router.transitionTo('custom-styles');
+                break;
+            case 12:
+                this.router.transitionTo('functions');
                 break;
         }
     }
