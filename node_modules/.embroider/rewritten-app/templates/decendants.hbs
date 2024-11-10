@@ -1,0 +1,33 @@
+<Step
+@title = "Decendants"
+@description = "Decendants are elements that are nested inside of another element. In Tailwind, you can style these elements by using the *- selector."
+@extra = "Let's see how we can use these in Tailwind."
+/>
+<div class="pl-4 mb-16 flex flex-col space-y-4 items-start">
+    <Card
+    @title="*-{utility class}"
+    @description="This targets all elements that are nested inside of the parent element. The utility class can be any Tailwind class."
+    @code1=
+"<div class = 'flex flex-col space-y-4 *:first-letter:text-4xl'>
+    <div class='bg-sky-100'>One</div>
+    <div class='bg-sky-100'>Two</div>
+    <div class='bg-sky-100'>Three</div>
+</div>"
+    />
+    <Card
+    @title="Parent Over Children"
+    @description="All definitions of the parent will be applied to the children and the children's styles will be overridden."
+    @code1=
+"<div class = 'flex flex-col space-y-4 *:first-letter:text-2xl'>
+    <div class='bg-sky-100 first-letter:text-5xl'>One</div>
+    <div class='bg-sky-100 first-letter:text-5xl'>Two</div>
+    <div class='bg-sky-100 first-letter:text-5xl'>Three</div>
+</div>"
+    @code2=
+"<div class = 'flex flex-col space-y-4'>
+    <div class='bg-sky-100 first-letter:text-5xl'>One</div>
+    <div class='bg-sky-100 first-letter:text-5xl'>Two</div>
+    <div class='bg-sky-100 first-letter:text-5xl'>Three</div>
+</div>"
+    />
+</div>
