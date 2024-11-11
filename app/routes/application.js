@@ -33,21 +33,18 @@ export default class ApplicationRoute extends Route {
                 this.router.transitionTo('has');
                 break;
             case 7:
-                this.router.transitionTo('before-after');
-                break;
-            case 8:
                 this.router.transitionTo('media');
                 break;
-            case 9:
+            case 8:
                 this.router.transitionTo('darkmode');
                 break;
-            case 10:
+            case 9:
                 this.router.transitionTo('reusing');
                 break;
-            case 11:
+            case 10:
                 this.router.transitionTo('custom-styles');
                 break;
-            case 12:
+            case 11:
                 this.router.transitionTo('functions');
                 break;
         }

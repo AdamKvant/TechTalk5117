@@ -13,7 +13,6 @@ Router.map(function () {
   this.route('peers');
   this.route('decendants');
   this.route('has');
-  this.route('before-after')
   this.route('media');
   this.route('darkmode');
   this.route('reusing');
