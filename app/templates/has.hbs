@@ -1,0 +1,48 @@
+<Step
+@title = "Has Conditional"
+@description = "The has conditional is a way to apply styles to an element based on whether it has a certain class or not. This is useful for creating conditional styles."
+@extra = "This is very useful for arbitrary states based off of styles."
+/>
+<div class="pl-4 mb-16 flex flex-col space-y-4 items-start">
+<Card
+@title="has-{utility class}"
+@description="This targets all elements that have the specified utility class."
+@code1="
+<div class='p-6 hidden has-[h1]:block'>
+    <div class='bg-sky-700 text-white'>
+        <h1> You can see this because it is a h1</h1>
+    </div>
+</div>
+"
+@code2=
+"<div class='p-6 hidden has-[h1]:block'>
+    <div class='bg-red-200'>
+        You can't see this!
+    </div>
+</div>
+"
+@code3=
+"<div class='p-6 bg-sky-200 has-[:focus]:bg-sky-700 no-flip'>
+    <input type='text' placeholder='Focus on me!' class='p-2 rounded-lg'>
+</div>"
+/>
+</div>
+
+<Card
+@title="group-has-{pseudo-class or element}"
+@description="This targets all elements that are a part of a group that have the specified pseudo-class or element and allows you to change this element based on that group."
+@extra="This is useful for changing the appearance of an element based on its group."
+@code1=
+"<div class='group p-6 bg-sky-400'>
+    <h2>Well, I'm here?</h2>
+    <div class='p-6 bg-sky-200'>
+        <div class='group-has-[h2]:bg-red-400'>
+            This is red because the parent has a h2!
+        </div>
+        <div class='group-has-[h1]:bg-red-400'>
+            This is not red because the parent does not have a h1!
+        </div>
+    </div>
+</div>"
+/>
+{{outlet}}

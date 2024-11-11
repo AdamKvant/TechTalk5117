@@ -8,6 +8,7 @@ export default class ApplicationController extends Controller {
     @service router;
     numberOfSteps = 13;
 
+    
     transitionStep() {
         console.log('transitioning to step', this.step);
         switch(this.step) {
@@ -51,6 +52,7 @@ export default class ApplicationController extends Controller {
                 this.router.transitionTo('functions');
                 break;
         }
+                
     }
 
     @action

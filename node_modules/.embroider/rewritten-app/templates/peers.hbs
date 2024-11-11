@@ -1,0 +1,43 @@
+<Step
+    @title = "Peers"
+    @description = "Peers are almost the same thing as groups, but instead of using the parent relationship they use the sibling relationship. This means that you can apply a class to a sibling element based on the state of another sibling element."
+    @extra = "There are 3 types of peer operations in Tailwind:"
+/>
+<div class="pl-4 mb-16 flex flex-col space-y-4 items-start">
+    <Card
+        @title = "Peer States"
+        @description = "This is a way to apply a class to the element based off of another element equal in higharchy. Notice how the hover state of the first button changes the background color of the second button, but not the other way around!"
+        @code1 =
+"<div>
+    <button class='peer peer-focus:bg-sky-700 peer-focus:text-white bg-sky-100 p-2 rounded-lg no-flip'>
+        Click me!
+    </button>
+    <button class='peer peer-focus:bg-sky-700 peer-focus:text-white bg-sky-100 p-2 rounded-lg no-flip'>
+        Click me!
+    </button>
+</div>"
+    />
+    <Card
+        @title = "Peer Differentiation"
+        @description = "A way to select a peer specifically based on what its name is."
+        @code1 =
+'<input id="draft" class="peer/draft no-flip" type="radio" name="status" checked />
+<label for="draft" class="peer-checked/draft:text-sky-500 no-flip">Draft</label>
+
+<input id="published" class="peer/published no-flip" type="radio" name="status" />
+<label for="published" class="peer-checked/published:text-sky-500 no-flip">Published</label>'
+    />
+    <Card
+        @title = "Arbitrary Peer Classes"
+        @description = "Select a peer element by a class it has to apply style based off of that element."
+        @code1 =
+"<form> 
+    <label class='no-flip' for='email'>Email:</label> 
+    <input id='email' name='email' type='email' class='peer in no-flip' required /> 
+    <div class='hidden peer-focus-[.in]:block no-flip'>
+        This field is required.
+    </div> 
+</form>"
+    />
+</div>
+{{outlet}}
