@@ -4,7 +4,6 @@ import { inject as service } from '@ember/service';
 export default class ApplicationRoute extends Route {
     @service router;
 
-    /*
     afterModel() {
         const step = 1;
         this.controllerFor('application').set('step', step);
@@ -45,9 +44,11 @@ export default class ApplicationRoute extends Route {
                 this.router.transitionTo('custom-styles');
                 break;
             case 11:
+                this.router.transitionTo('directives');
+                break;
+            case 12:
                 this.router.transitionTo('functions');
                 break;
         }
     }
-        */
 }

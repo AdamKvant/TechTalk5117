@@ -43,6 +43,9 @@ export default class ApplicationController extends Controller {
                 this.router.transitionTo('custom-styles');
                 break;
             case 11:
+                this.router.transitionTo('directives');
+                break;
+            case 12:
                 this.router.transitionTo('functions');
                 break;
         }

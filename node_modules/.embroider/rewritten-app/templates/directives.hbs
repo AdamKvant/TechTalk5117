@@ -1,0 +1,123 @@
+<Step
+    @title = "Directives"
+    @description = "Directives are custom Tailwind-specific at-rules you can use in your CSS that offer special functionality for Tailwind CSS projects."
+/>
+<div class="pl-4 mb-16 flex flex-col space-y-4 items-start">
+    <Card
+        @title = "@tailwind"
+        @description = "Use the @tailwind directive to insert Tailwind’s base, components, utilities and variants styles into your CSS."
+        @noRender = "true"
+        @code1 =
+"/**
+ * This injects Tailwind's base styles and any base styles registered by
+ * plugins.
+ */
+@tailwind base;
+
+/**
+ * This injects Tailwind's component classes and any component classes
+ * registered by plugins.
+ */
+@tailwind components;
+
+/**
+ * This injects Tailwind's utility classes and any utility classes registered
+ * by plugins.
+ */
+@tailwind utilities;
+
+/**
+ * Use this directive to control where Tailwind injects the hover, focus,
+ * responsive, dark mode, and other variants of each class.
+ *
+ * If omitted, Tailwind will append these classes to the very end of
+ * your stylesheet by default.
+ */
+@tailwind variants;"
+    />
+
+    <Card
+    @title = "@layer"
+    @description = "Use the @layer directive to tell Tailwind which “bucket” a set of custom styles belong to. Valid layers are base, components, and utilities."
+    @noRender = "true"
+    @code1 =
+"@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  h1 {
+    @apply text-2xl;
+  }
+  h2 {
+    @apply text-xl;
+  }
+}
+
+@layer components {
+  .btn-blue {
+    @apply bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded;
+  }
+}
+
+@layer utilities {
+  .filter-none {
+    filter: none;
+  }
+  .filter-grayscale {
+    filter: grayscale(100%);
+  }
+}"
+    />
+
+    <Card
+    @title = "@apply"
+    @description = "Use @apply to inline any existing utility classes into your own custom CSS."
+    @noRender = "true"
+    @code1 =
+".select2-dropdown {
+  @apply rounded-b-lg shadow-md;
+}
+.select2-search {
+  @apply border border-gray-300 rounded;
+}
+.select2-results__group {
+  @apply text-lg font-bold text-gray-900;
+}"
+
+    @code2 = 
+"/* Input */
+.btn {
+  @apply font-bold py-2 px-4 rounded !important;
+}
+
+/* Output */
+.btn {
+  font-weight: 700 !important;
+  padding-top: .5rem !important;
+  padding-bottom: .5rem !important;
+  padding-right: 1rem !important;
+  padding-left: 1rem !important;
+  border-radius: .25rem !important;
+}"
+    />
+
+    <Card
+    @title = "@config"
+    @description = "Use the @config directive to specify which config file Tailwind should use when compiling that CSS file. This is useful for projects that need to use different configuration files for different CSS entry points."
+    @noRender = "true"
+    @code1 =
+"@config './tailwind.site.config.js';
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;"
+
+    @code2 =
+"@config './tailwind.admin.config.js';
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;"
+    />
+</div>

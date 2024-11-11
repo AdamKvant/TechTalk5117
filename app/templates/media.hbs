@@ -1,0 +1,25 @@
+<Step
+    @title = "Responsive Design"
+    @description = "Tailwind offers responsive utility variants to build adaptive user interfaces."
+/>
+<div class="pl-4 mb-16 flex flex-col space-y-4 items-start">
+    <Card
+        @title = "Automatic Resizing"
+        @description = "Adjust content based on the size of your window."
+        @code1 =
+"<div class='relative rounded-xl overflow-auto no-flip'>
+  <div class='max-w-md mx-auto bg-white rounded-xl shadow-md overflow-auto md:max-w-2xl'>
+    <div class='md:flex'>
+      <div class='md:shrink-0'>
+        <img class='h-48 w-full object-cover md:h-full md:w-48' src='/assets/images/test.jpg' alt='Modern building architecture'>
+      </div>
+      <div class='p-8'>
+        <div class='uppercase tracking-wide text-sm text-indigo-500 font-semibold'>Company retreats</div>
+        <a href='#' class='block mt-1 text-lg leading-tight font-medium text-black hover:underline'>Incredible accommodation for your team</a>
+        <p class='mt-2 text-slate-500'>Looking to take your team away on a retreat to enjoy awesome food and take in some sunshine? We have a list of places to do just that.</p>
+      </div>
+    </div>
+  </div>
+</div>"
+    />
+</div>

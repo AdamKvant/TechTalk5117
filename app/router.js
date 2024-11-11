@@ -17,5 +17,6 @@ Router.map(function () {
   this.route('darkmode');
   this.route('reusing');
   this.route('custom-styles');
+  this.route('directives');
   this.route('functions');
 });
