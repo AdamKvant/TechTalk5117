@@ -1,0 +1,42 @@
+{{page-title "TailwindInstall"}}
+<div class="flex flex-row items-center justify-center overflow-hidden">
+{{outlet}}
+<div>
+    <img class="w-7/12 object-cover" src="/assets/images/tailwindguides.png">
+</div>
+<div class="flex flex-col items-center justify-center">
+<Heading 
+      @title="Tailwind CSS Installation"
+      @description="Tailwind has four primary installation methods:"
+    />
+    
+    <div class="pl-4 mb-16 flex flex-wrap gap-4 items-start">
+        <div class="flex flex-col justify-between h-full">
+            <div class="mb-4" >
+        <Card
+          @title="Tailwind CLI (via NPM)"
+          />
+            </div>
+            <div class="mb-4" >
+          <Card
+          @title="PostCSS"
+          />
+            </div>
+        </div>
+        <div class="flex flex-col justify-between h-full">
+            <div class="mb-4" >
+            <Card
+          @title="CDN"
+          />
+            </div>
+            <div class="mb-4" >
+          <Card
+          @title="Framework specific guides"
+          />
+            </div>
+        </div>
+    </div>
+</div>
+
+
+</div>

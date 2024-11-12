@@ -1,0 +1,46 @@
+{{page-title "TailwindAbout"}}
+<div class="flex flex-col items-center justify-center">
+{{outlet}}
+
+<Heading 
+  @title="What is Tailwind CSS?"
+  @description = "Tailwind CSS is a utility-first CSS framework featuring:"
+/>
+
+<div class="pl-4 mb-16 flex flex-wrap gap-4 items-start">
+    <div class="flex flex-col justify-between h-full">
+        <div class="mb-4" >
+    <Card
+      @title="Flex-based responsive design"
+      />
+        </div>
+        <div class="mb-4" >
+      <Card
+      @title="All modifiers are Mobile-First"
+      />
+        </div>
+        <div class="mb-4" >
+      <Card
+      @title="Build size friendly"
+      />
+        </div>
+    </div>
+    <div class="flex flex-col justify-between h-full">
+        <div class="mb-4" >
+        <Card
+      @title="Built-in dark mode"
+      />
+        </div>
+        <div class="mb-4" >
+      <Card
+      @title="Exceptional IDE integration"
+      />
+        </div>
+        <div class="mb-4" >
+      <Card
+      @title="EmberJS support & guides 👀"
+      />
+        </div>
+    </div>
+</div>
+</div>

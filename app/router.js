@@ -7,7 +7,12 @@ export default class Router extends EmberRouter {
 }
 
 Router.map(function () {
-  this.route('modifiers', { path: '/' }); 
+  this.route('title');
+  this.route('tailwind-about');
+  this.route('tailwind-install');
+  this.route('tailwind-plugin');
+  this.route('demo-time');
+  this.route('modifiers');
   this.route('pseudo-classes');
   this.route('groups');
   this.route('peers');

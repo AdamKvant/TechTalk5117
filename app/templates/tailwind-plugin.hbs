@@ -1,0 +1,39 @@
+{{page-title "TailwindPlugin"}}
+<div class="flex flex-col items-center justify-center">
+    {{outlet}}
+    
+    <Heading 
+      @title="Tailwind CSS Intellisense Plugin features:"
+    />
+    
+    <div class="pl-4 mb-16 flex flex-wrap gap-4 items-start">
+        <div class="flex flex-col justify-between h-full">
+            <div class="mb-4" >
+        <Card
+          @title="Linting"
+          />
+            </div>
+            <div class="mb-4" >
+          <Card
+          @title="Autocomplete"
+          />
+            </div>
+        </div>
+        <div class="flex flex-col justify-between h-full">
+            <div class="mb-4" >
+            <Card
+          @title="Hover previews"
+          />
+            </div>
+            <div class="mb-4" >
+          <Card
+          @title="Syntax highlighting"
+          />
+            </div>
+        </div>
+    </div>
+    <Heading 
+      @title="Tailwind CSS Prettier Plugin"
+      @description="Automatically reorders CSS classes to follow Tailwind’s recommended class order"
+    />
+    </div>

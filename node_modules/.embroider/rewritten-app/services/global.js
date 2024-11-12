@@ -6,6 +6,11 @@ export default class GlobalService extends Service {
     @service router;
 
     chapters = [
+    'title',
+    'tailwind-about',
+    'tailwind-install',
+    'tailwind-plugin',
+    'demo-time',
     'modifiers',
     'pseudo-classes',
     'groups',
