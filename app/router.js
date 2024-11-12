@@ -7,7 +7,7 @@ export default class Router extends EmberRouter {
 }
 
 Router.map(function () {
-  this.route('intro', { path: '/' }); 
+  this.route('modifiers', { path: '/' }); 
   this.route('pseudo-classes');
   this.route('groups');
   this.route('peers');
