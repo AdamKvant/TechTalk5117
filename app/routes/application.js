@@ -3,30 +3,16 @@ import { inject as service } from '@ember/service';
 
 export default class ApplicationRoute extends Route {
     @service router;
+    @service global;
 
     afterModel() {
-        const step = 1;
-        this.controllerFor('application').set('step', step);
-        this.transitionStep(step);
+        this.global.step = 1;
+        this.controllerFor('application').set('step', this.global.step);
+        this.transitionStep(1);
     }
 
-    chapters = [
-        'modifiers',
-        'pseudo-classes',
-        'groups',
-        'peers',
-        'decendants',
-        'has',
-        'media',
-        'darkmode',
-        'reusing',
-        'custom-styles',
-        'directives',
-        'functions'
-    ];
-    
     transitionStep(step) {
         console.log('transitioning to step', step);
-        this.router.transitionTo(this.chapters[step - 1]);
+        this.router.transitionTo(this.global.chapters[step - 1]);
     }
 }

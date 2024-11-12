@@ -4,46 +4,27 @@ import { action } from '@ember/object';
 import { inject as service } from '@ember/service';
 
 export default class ApplicationController extends Controller {
-    @tracked step = 1;
     @service router;
-
-    chapters = [
-        'modifiers',
-        'pseudo-classes',
-        'groups',
-        'peers',
-        'decendants',
-        'has',
-        'media',
-        'darkmode',
-        'reusing',
-        'custom-styles',
-        'directives',
-        'functions'
-    ];
-
-    numberOfSteps = this.chapters.length;
+    @service global;
     
-    transitionStep() {
-        console.log('transitioning to step', this.step);
-        this.router.transitionTo(this.chapters[this.step - 1]);
+    transitionStep(step) {
+        console.log('transitioning to step', step);
+        this.router.transitionTo(this.global.chapters[step - 1]);
     }
 
     @action
     nextStep() {
-        if (this.step === this.numberOfSteps) {
+        if (this.global.step === this.global.numberOfSteps) {
             return;
         }
-        this.step++;
-        this.transitionStep();
+        this.transitionStep(++this.global.step);
     }
 
     @action
     previousStep() {
-        if (this.step === 1) {
+        if (this.global.step === 1) {
             return;
         }
-        this.step--;
-        this.transitionStep();
+        this.transitionStep(--this.global.step);
     }
 }
