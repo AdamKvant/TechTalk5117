@@ -1,8 +1,7 @@
 {{page-title "TechTalk"}}
 <div class="flexv flex-row min-h-screen">
 <div class="p-4 flex justify-between w-full">
-    <button class="bg-sky-700 text-white p-2 rounded-lg" {{on "click" this.previousStep}}>Previous</button>
-    <button class="bg-sky-700 text-white p-2 rounded-lg" {{on "click" this.nextStep}}>Next</button>
-</div>
+    <button class="bg-sky-700 text-white p-2 rounded-lg {{if (eq this.global.step 1) 'invisible'}}" {{on "click" this.previousStep}}>Previous</button>
+    <button class="bg-sky-700 text-white p-2 rounded-lg {{if (eq this.global.step this.global.numberOfSteps) 'hidden'}}" {{on "click" this.nextStep}}>Next</button></div>
     {{outlet}}
 </div>
