@@ -8,6 +8,7 @@ Written and Presented by:
 
 
 ## Presentation Resources:
+* <a href="https://tailwindcss.com/docs/installation">Tailwind CSS Documentation</a>
 * <a href="https://tailwindcss.com/docs/guides/emberjs">Tailwind CSS EmberJS Guide</a>
 * <a href="https://tailwindcss.com/docs/installation/framework-guides">Tailiwnd CSS Framework Specific Guides</a>
 * <a href="https://marketplace.visualstudio.com/items?itemName=bradlc.vscode-tailwindcss"> Tailwind CSS Intellisense Plugin for VSCode</a>
