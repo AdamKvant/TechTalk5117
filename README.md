@@ -1,4 +1,4 @@
-# TechTalk5117: Tailwind CSS
+# Tech Share: Tailwind CSS
 ### Team: The Peanut Butter Pickles
 Written and Presented by:
 - Adam Kvant
