@@ -19,6 +19,9 @@ To Setup:
 To Start:
 - CD into TechTalk directory
 - Run [npm run start]
+
+To View:
+- Visit `http://localhost:4200/`
 ## Prerequisites
 You will need the following things properly installed on your computer.
 
