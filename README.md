@@ -6,7 +6,7 @@ Written and Presented by:
 - Rock Zgutowics
 - Minh Tong
 
-<a href="https://www.youtube.com/watch?v=G9Nbt66Y7H8">Video Link</a>
+### <a href="https://www.youtube.com/watch?v=G9Nbt66Y7H8">Video Link</a>
 
 ## Presentation Resources:
 * <a href="https://tailwindcss.com/docs/installation">Tailwind CSS Documentation</a>
